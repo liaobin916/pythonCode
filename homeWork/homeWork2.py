@@ -49,13 +49,11 @@ class Animal:
 # - 添加一个新的方法， 会捉老鼠
 # - 复写父类的‘【会叫】的方法，改成【喵喵叫】
 class Cat(Animal):
+    hair = "短发"
     # 复写父类的方法，继承父类的属性
     def __init__(self, name, color, age, sex):
-        # Animal.__init__(name, color, age, sex)
         super().__init__(name, color, age, sex)
         # print("子类构造函数")
-
-    hair = "短发"
 
     def catch_mouse(self):
         print("我是猫，我会抓老鼠。。。")
@@ -74,10 +72,9 @@ class Cat(Animal):
 
 
 class Dog(Animal):
+    hair = "长发"
     def __init__(self, name, color, age, sex):
         super().__init__(name, color, age, sex)
-
-    hair = "长发"
 
     def look_after_house(self):
         print("会看家。。。")
