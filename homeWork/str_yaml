@@ -1,0 +1,11 @@
+cat:
+  name: xiaohua
+  color: white
+  age: 2
+  sex: famale
+
+dog:
+  name: wangcai
+  color: yellow
+  age: 8
+  sex: male
