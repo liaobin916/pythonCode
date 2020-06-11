@@ -8,9 +8,11 @@
 # send()
 # show()
 
-var = "python"
-__var1 = "私有属性"
+import pytest
+import yaml
 
 
-def sayHi():
-    print("Hi!")
+class TestData:
+    @pytest.mark.parametrize(('a', 'b'), yaml.safe_load(open("E:\pythonCode\homeWork\str2_yaml.yaml")))
+    def test_data(self, a, b):
+        print(a + b)
